@@ -14,6 +14,10 @@
 		8286A1BF1E9CA51B00A0557B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1BE1E9CA51B00A0557B /* Assets.xcassets */; };
 		8286A1C21E9CA51B00A0557B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1C01E9CA51B00A0557B /* LaunchScreen.storyboard */; };
 		8286A1D11E9CC90D00A0557B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D01E9CC90D00A0557B /* MainViewController.m */; };
+		8286A1D41E9CDAFE00A0557B /* EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D31E9CDAFE00A0557B /* EssenceViewController.m */; };
+		8286A1D71E9CDB1200A0557B /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D61E9CDB1200A0557B /* NewViewController.m */; };
+		8286A1DA1E9CDB3D00A0557B /* FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */; };
+		8286A1DD1E9CDB4700A0557B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1DC1E9CDB4700A0557B /* MeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		8286A1C31E9CA51B00A0557B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8286A1CF1E9CC90D00A0557B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8286A1D01E9CC90D00A0557B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8286A1D21E9CDAFE00A0557B /* EssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceViewController.h; sourceTree = "<group>"; };
+		8286A1D31E9CDAFE00A0557B /* EssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceViewController.m; sourceTree = "<group>"; };
+		8286A1D51E9CDB1200A0557B /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		8286A1D61E9CDB1200A0557B /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		8286A1D81E9CDB3D00A0557B /* FriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTrendsViewController.h; sourceTree = "<group>"; };
+		8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTrendsViewController.m; sourceTree = "<group>"; };
+		8286A1DB1E9CDB4700A0557B /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		8286A1DC1E9CDB4700A0557B /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,14 @@
 				8286A1B31E9CA51A00A0557B /* AppDelegate.m */,
 				8286A1CF1E9CC90D00A0557B /* MainViewController.h */,
 				8286A1D01E9CC90D00A0557B /* MainViewController.m */,
+				8286A1D21E9CDAFE00A0557B /* EssenceViewController.h */,
+				8286A1D31E9CDAFE00A0557B /* EssenceViewController.m */,
+				8286A1D51E9CDB1200A0557B /* NewViewController.h */,
+				8286A1D61E9CDB1200A0557B /* NewViewController.m */,
+				8286A1D81E9CDB3D00A0557B /* FriendTrendsViewController.h */,
+				8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */,
+				8286A1DB1E9CDB4700A0557B /* MeViewController.h */,
+				8286A1DC1E9CDB4700A0557B /* MeViewController.m */,
 				8286A1B81E9CA51A00A0557B /* Main.storyboard */,
 				8286A1BE1E9CA51B00A0557B /* Assets.xcassets */,
 				8286A1C01E9CA51B00A0557B /* LaunchScreen.storyboard */,
@@ -152,9 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8286A1DA1E9CDB3D00A0557B /* FriendTrendsViewController.m in Sources */,
 				8286A1B41E9CA51A00A0557B /* AppDelegate.m in Sources */,
 				8286A1B11E9CA51A00A0557B /* main.m in Sources */,
 				8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */,
+				8286A1D71E9CDB1200A0557B /* NewViewController.m in Sources */,
+				8286A1D41E9CDAFE00A0557B /* EssenceViewController.m in Sources */,
+				8286A1DD1E9CDB4700A0557B /* MeViewController.m in Sources */,
 				8286A1D11E9CC90D00A0557B /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
