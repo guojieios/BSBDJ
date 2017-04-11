@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    // 设置 界面
+    // 1. 创建一个 window
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    // 2. 给window设置跟控制器
+    self.window.rootViewController = [[MainViewController alloc] init];
+    
+    // 3. 设置window为主要的窗口并可见
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 
