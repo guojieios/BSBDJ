@@ -18,6 +18,7 @@
 		8286A1D71E9CDB1200A0557B /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D61E9CDB1200A0557B /* NewViewController.m */; };
 		8286A1DA1E9CDB3D00A0557B /* FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */; };
 		8286A1DD1E9CDB4700A0557B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1DC1E9CDB4700A0557B /* MeViewController.m */; };
+		82B8C04E1E9DD9BC00203496 /* HQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8C04D1E9DD9BC00203496 /* HQTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTrendsViewController.m; sourceTree = "<group>"; };
 		8286A1DB1E9CDB4700A0557B /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		8286A1DC1E9CDB4700A0557B /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		82B8C04C1E9DD9BC00203496 /* HQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTabBar.h; sourceTree = "<group>"; };
+		82B8C04D1E9DD9BC00203496 /* HQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				8286A1D91E9CDB3D00A0557B /* FriendTrendsViewController.m */,
 				8286A1DB1E9CDB4700A0557B /* MeViewController.h */,
 				8286A1DC1E9CDB4700A0557B /* MeViewController.m */,
+				82B8C04C1E9DD9BC00203496 /* HQTabBar.h */,
+				82B8C04D1E9DD9BC00203496 /* HQTabBar.m */,
 				8286A1B81E9CA51A00A0557B /* Main.storyboard */,
 				8286A1BE1E9CA51B00A0557B /* Assets.xcassets */,
 				8286A1C01E9CA51B00A0557B /* LaunchScreen.storyboard */,
@@ -179,6 +184,7 @@
 				8286A1D71E9CDB1200A0557B /* NewViewController.m in Sources */,
 				8286A1D41E9CDAFE00A0557B /* EssenceViewController.m in Sources */,
 				8286A1DD1E9CDB4700A0557B /* MeViewController.m in Sources */,
+				82B8C04E1E9DD9BC00203496 /* HQTabBar.m in Sources */,
 				8286A1D11E9CC90D00A0557B /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
