@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  BSBDJ
+//
+//  Created by Jerry_hqyj on 17/4/12.
+//  Copyright © 2017年 Jerry_hqyj. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+HQExtension.h"
+
+#endif /* PrefixHeader_pch */

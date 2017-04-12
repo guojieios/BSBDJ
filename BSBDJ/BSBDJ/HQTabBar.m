@@ -52,22 +52,22 @@
     
     // 设置button 的大小
     self.publishButton.frame = CGRectMake(0, 0, self.publishButton.currentBackgroundImage.size.width, self.publishButton.currentBackgroundImage.size.height);
-    self.publishButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.publishButton.center = CGPointMake(self.width * 0.5, self.height * 0.5);
     
     
     
     
     CGFloat buttonY = 0;
-    CGFloat buttonW = self.frame.size.width / 5;
-    CGFloat buttonH = self.frame.size.height;
+    CGFloat buttonW = self.width / 5;
+    CGFloat buttonH = self.height;
     
     NSInteger index = 0;
     // 修改其他item的位置
     for (UIView *button in self.subviews) {
         
-        if (![button isKindOfClass:NSClassFromString(@"UITabBarButton")]) continue;
+        if (![button isKindOfClass:NSClassFromString(@"UITabBarButton")])  continue;
         
-        CGFloat buttonX = buttonW * index;
+        CGFloat buttonX = buttonW * ((index > 1) ? (index + 1) : index);
         
         
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
