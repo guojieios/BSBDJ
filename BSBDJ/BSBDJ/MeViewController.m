@@ -18,6 +18,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 设置 标题
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+
+    // 月亮
+    UIButton *moonButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [moonButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
+    
+    [moonButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
+    moonButton.size = moonButton.currentBackgroundImage.size;
+    
+    // 设置
+    UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
+    
+    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
+    settingButton.size = settingButton.currentBackgroundImage.size;
+    
+    
+    
+    self.navigationItem.rightBarButtonItems = @[
+                                                 [[UIBarButtonItem alloc] initWithCustomView:settingButton],
+                                               [[UIBarButtonItem alloc] initWithCustomView:moonButton]
+                                              
+                                               ];
+    
+    
 
     
 }
