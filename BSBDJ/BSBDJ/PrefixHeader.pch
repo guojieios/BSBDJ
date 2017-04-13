@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "UIView+HQExtension.h"
+#import "UIBarButtonItem+HQExtension.h"
 
 #endif /* PrefixHeader_pch */

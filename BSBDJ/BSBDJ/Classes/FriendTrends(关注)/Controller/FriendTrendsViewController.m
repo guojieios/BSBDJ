@@ -18,9 +18,27 @@
     [super viewDidLoad];
     
     
-
+    // 设置导航栏
+    // 设置导航文字
+    //    self.navigationItem.title = @"精华";
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    
+  
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendButtonClick)];
+    
     
 }
+
+
+
+-(void)friendButtonClick {
+    
+    NSLog(@"点击");
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
