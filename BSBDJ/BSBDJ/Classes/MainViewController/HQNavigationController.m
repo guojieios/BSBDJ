@@ -11,6 +11,23 @@
 @implementation HQNavigationController
 
 
+// 当第一次使用该类的时候，会调用一次
++(void)initialize {
+    
+    
+    // 设置导航栏背景
+    UINavigationBar *bar = [UINavigationBar appearance];
+    
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    NSLog(@"%s",__func__);
+
+    
+    
+}
+
+
+
 
 // 重写系统的方法  --- 冲掉系统原来的方法执行 - 优先执行重写的方法
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
