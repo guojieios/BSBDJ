@@ -16,6 +16,8 @@
 		823A31521E9F7FAF0014AADF /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31431E9F7FAF0014AADF /* NewViewController.m */; };
 		823A31531E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31491E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m */; };
 		823A31541E9F7FAF0014AADF /* UIView+HQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A314B1E9F7FAF0014AADF /* UIView+HQExtension.m */; };
+		823A31571EA0544C0014AADF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31561EA0544C0014AADF /* TestViewController.m */; };
+		823A315A1EA05B3A0014AADF /* HQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31591EA05B3A0014AADF /* HQNavigationController.m */; };
 		8286A1B11E9CA51A00A0557B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1B01E9CA51A00A0557B /* main.m */; };
 		8286A1BA1E9CA51A00A0557B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1B81E9CA51A00A0557B /* Main.storyboard */; };
 		8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1BB1E9CA51A00A0557B /* BSBDJ.xcdatamodeld */; };
@@ -42,6 +44,10 @@
 		823A31491E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HQExtension.m"; sourceTree = "<group>"; };
 		823A314A1E9F7FAF0014AADF /* UIView+HQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HQExtension.h"; sourceTree = "<group>"; };
 		823A314B1E9F7FAF0014AADF /* UIView+HQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HQExtension.m"; sourceTree = "<group>"; };
+		823A31551EA0544C0014AADF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		823A31561EA0544C0014AADF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		823A31581EA05B3A0014AADF /* HQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavigationController.h; sourceTree = "<group>"; };
+		823A31591EA05B3A0014AADF /* HQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavigationController.m; sourceTree = "<group>"; };
 		8286A1AC1E9CA51A00A0557B /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8286A1B01E9CA51A00A0557B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8286A1B91E9CA51A00A0557B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 			children = (
 				823A31281E9F7FAF0014AADF /* EssenceViewController.h */,
 				823A31291E9F7FAF0014AADF /* EssenceViewController.m */,
+				823A31551EA0544C0014AADF /* TestViewController.h */,
+				823A31561EA0544C0014AADF /* TestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +175,8 @@
 				823A31361E9F7FAF0014AADF /* HQTabBar.m */,
 				823A31371E9F7FAF0014AADF /* MainViewController.h */,
 				823A31381E9F7FAF0014AADF /* MainViewController.m */,
+				823A31581EA05B3A0014AADF /* HQNavigationController.h */,
+				823A31591EA05B3A0014AADF /* HQNavigationController.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -379,9 +389,11 @@
 				823A314C1E9F7FAF0014AADF /* AppDelegate.m in Sources */,
 				823A31531E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m in Sources */,
 				823A314E1E9F7FAF0014AADF /* FriendTrendsViewController.m in Sources */,
+				823A31571EA0544C0014AADF /* TestViewController.m in Sources */,
 				823A31501E9F7FAF0014AADF /* MainViewController.m in Sources */,
 				823A314F1E9F7FAF0014AADF /* HQTabBar.m in Sources */,
 				823A31521E9F7FAF0014AADF /* NewViewController.m in Sources */,
+				823A315A1EA05B3A0014AADF /* HQNavigationController.m in Sources */,
 				823A31511E9F7FAF0014AADF /* MeViewController.m in Sources */,
 				823A314D1E9F7FAF0014AADF /* EssenceViewController.m in Sources */,
 			);

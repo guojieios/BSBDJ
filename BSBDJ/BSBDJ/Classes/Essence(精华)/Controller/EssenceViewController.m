@@ -7,6 +7,7 @@
 //
 
 #import "EssenceViewController.h"
+#import "TestViewController.h"
 
 @interface EssenceViewController ()
 
@@ -34,9 +35,19 @@
 
 
 
+
+
+
 -(void)leftButtonClick {
     
-    NSLog(@"点击");
+    TestViewController *vc = [[TestViewController alloc] init];
+    
+ 
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    
     
     
 }
