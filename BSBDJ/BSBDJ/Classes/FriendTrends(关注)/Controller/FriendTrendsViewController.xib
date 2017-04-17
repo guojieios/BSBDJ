@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendTrendsViewController">
+            <connections>
+                <outlet property="label" destination="HC0-QQ-0u7" id="blj-MH-xas"/>
+                <outlet property="view" destination="iN0-l3-epB" id="CbZ-pE-bT5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="424"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-ie-jzG">
+                    <rect key="frame" x="213" y="138" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="UXq-Re-JDL"/>
+                        <constraint firstAttribute="width" constant="48" id="beW-HH-zEP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-QQ-0u7">
+                    <rect key="frame" x="157" y="226" width="159.5" height="33.5"/>
+                    <string key="text">快快登录，关注百思niu人
+好友动态让你过把瘾！！</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-25-UWy">
+                    <rect key="frame" x="115.5" y="299" width="243" height="48"/>
+                    <state key="normal" title="登录" backgroundImage="friendsTrend_login">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cEn-ie-jzG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9KC-rq-OKU"/>
+                <constraint firstItem="HC0-QQ-0u7" firstAttribute="top" secondItem="cEn-ie-jzG" secondAttribute="bottom" constant="40" id="KHm-vP-bFJ"/>
+                <constraint firstItem="cEn-ie-jzG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="OH0-5I-X99"/>
+                <constraint firstItem="HlF-25-UWy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Seh-cz-B2K"/>
+                <constraint firstItem="HlF-25-UWy" firstAttribute="top" secondItem="HC0-QQ-0u7" secondAttribute="bottom" constant="40" id="V5A-ON-n0E"/>
+                <constraint firstItem="HC0-QQ-0u7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gUc-hG-OxT"/>
+                <constraint firstItem="HC0-QQ-0u7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wat-5U-gE0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wat-5U-gE0"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="336" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

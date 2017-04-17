@@ -23,6 +23,7 @@
 		8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1BB1E9CA51A00A0557B /* BSBDJ.xcdatamodeld */; };
 		8286A1BF1E9CA51B00A0557B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1BE1E9CA51B00A0557B /* Assets.xcassets */; };
 		8286A1C21E9CA51B00A0557B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1C01E9CA51B00A0557B /* LaunchScreen.storyboard */; };
+		82C1BDC51EA4883400BFD79B /* FriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C1BDC41EA4883400BFD79B /* FriendTrendsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8286A1BE1E9CA51B00A0557B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8286A1C11E9CA51B00A0557B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8286A1C31E9CA51B00A0557B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C1BDC41EA4883400BFD79B /* FriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTrendsViewController.xib; sourceTree = "<group>"; };
 		82E435101E9E147A0020A9BC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				823A312F1E9F7FAF0014AADF /* FriendTrendsViewController.h */,
 				823A31301E9F7FAF0014AADF /* FriendTrendsViewController.m */,
+				82C1BDC41EA4883400BFD79B /* FriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			files = (
 				8286A1C21E9CA51B00A0557B /* LaunchScreen.storyboard in Resources */,
 				8286A1BF1E9CA51B00A0557B /* Assets.xcassets in Resources */,
+				82C1BDC51EA4883400BFD79B /* FriendTrendsViewController.xib in Resources */,
 				8286A1BA1E9CA51A00A0557B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

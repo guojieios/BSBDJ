@@ -9,6 +9,7 @@
 #import "FriendTrendsViewController.h"
 
 @interface FriendTrendsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+ 
     
     
     // 设置导航栏
