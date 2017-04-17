@@ -7,6 +7,7 @@
 //
 
 #import "FriendTrendsViewController.h"
+#import "RecommendViewController.h"
 
 @interface FriendTrendsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -38,7 +39,18 @@
 
 -(void)friendButtonClick {
     
-    NSLog(@"点击");
+    
+    // 跳转到推荐模块
+    RecommendViewController *vc = [[RecommendViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    
+    
+    
+    
+    
     
     
 }
