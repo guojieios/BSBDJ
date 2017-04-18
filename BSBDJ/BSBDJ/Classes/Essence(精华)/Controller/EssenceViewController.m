@@ -7,7 +7,8 @@
 //
 
 #import "EssenceViewController.h"
-#import "TestViewController.h"
+#import "RecommendTagsViewController.h"
+
 
 @interface EssenceViewController ()
 
@@ -40,7 +41,7 @@
 
 -(void)leftButtonClick {
     
-    TestViewController *vc = [[TestViewController alloc] init];
+    RecommendTagsViewController *vc = [[RecommendTagsViewController alloc] init];
     
  
     
