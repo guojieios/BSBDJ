@@ -20,7 +20,7 @@
 /**
  *  订阅量
  */
-@property (nonatomic, copy) NSString * sub_number;
+@property (nonatomic, assign) NSInteger sub_number;
 
 
 

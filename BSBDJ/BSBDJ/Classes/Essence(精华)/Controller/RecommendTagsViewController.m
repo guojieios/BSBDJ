@@ -11,6 +11,7 @@
 #import "SVProgressHUD.h"
 #import "MJExtension.h"
 #import "RecommendTag.h"
+#import "RecommendTableViewCell.h"
 
 
 @interface RecommendTagsViewController ()
@@ -19,6 +20,8 @@
 
 
 @end
+
+static NSString * const TagCell = @"TagCell";
 
 @implementation RecommendTagsViewController
 
@@ -44,6 +47,16 @@
     // 设置标题
     self.title = @"推荐标签";
     
+    // 注册
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([RecommendTableViewCell class]) bundle:nil] forCellReuseIdentifier:TagCell];
+    
+    
+    // 行高
+    self.tableView.rowHeight = 70;
+    
+    
+    // 取消下划线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     
     
@@ -55,6 +68,11 @@
  *  网络工具 - 获取数据
  */
 -(void)loadTags {
+    
+    
+    // 提示
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    
     
     // 参数
     NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
@@ -68,19 +86,20 @@
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         // 字典转模型
-        self.tags = [RecommendTag objectArrayWithKeyValuesArray:responseObject];
+        self.tags = [RecommendTag mj_objectArrayWithKeyValuesArray:responseObject];
         
-        
+        [self.tableView reloadData];
         
         HQLog(@"%@",responseObject);
         
-        
+        [SVProgressHUD showSuccessWithStatus:@"加载成功！"];
+        [SVProgressHUD dismiss];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         HQLog(@"%@",error);
         
-        
+        [SVProgressHUD showErrorWithStatus:@"加载失败！"];
     }];
     
     
@@ -96,68 +115,27 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.tags.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    
+    
+    RecommendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TagCell];
+    
+    
+    cell.recommendTag = self.tags[indexPath.row];
+    
+    
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

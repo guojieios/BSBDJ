@@ -26,6 +26,8 @@
 		82C1BDC81EA4986F00BFD79B /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1BDC71EA4986F00BFD79B /* RecommendViewController.m */; };
 		82FE24651EA5F6D3009846C6 /* RecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE24641EA5F6D3009846C6 /* RecommendTagsViewController.m */; };
 		82FE24681EA5F9AE009846C6 /* RecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE24671EA5F9AE009846C6 /* RecommendTag.m */; };
+		82FE246C1EA6112B009846C6 /* RecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FE246A1EA6112B009846C6 /* RecommendTableViewCell.m */; };
+		82FE246D1EA6112B009846C6 /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82FE246B1EA6112B009846C6 /* RecommendTableViewCell.xib */; };
 		94CAD469489AA4180D518902 /* Pods_BSBDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B37BAB1C1FFD98EA2FDF9 /* Pods_BSBDJ.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		82FE24641EA5F6D3009846C6 /* RecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTagsViewController.m; sourceTree = "<group>"; };
 		82FE24661EA5F9AE009846C6 /* RecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTag.h; sourceTree = "<group>"; };
 		82FE24671EA5F9AE009846C6 /* RecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTag.m; sourceTree = "<group>"; };
+		82FE24691EA6112B009846C6 /* RecommendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTableViewCell.h; sourceTree = "<group>"; };
+		82FE246A1EA6112B009846C6 /* RecommendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTableViewCell.m; sourceTree = "<group>"; };
+		82FE246B1EA6112B009846C6 /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
 		E4D0AD8AA86ED133F80EA38B /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		F0F3A4DD62F21B3D92CAD5FA /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +152,9 @@
 		823A312C1E9F7FAF0014AADF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82FE24691EA6112B009846C6 /* RecommendTableViewCell.h */,
+				82FE246A1EA6112B009846C6 /* RecommendTableViewCell.m */,
+				82FE246B1EA6112B009846C6 /* RecommendTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +420,7 @@
 			files = (
 				8286A1C21E9CA51B00A0557B /* LaunchScreen.storyboard in Resources */,
 				8286A1BF1E9CA51B00A0557B /* Assets.xcassets in Resources */,
+				82FE246D1EA6112B009846C6 /* RecommendTableViewCell.xib in Resources */,
 				82C1BDC51EA4883400BFD79B /* FriendTrendsViewController.xib in Resources */,
 				8286A1BA1E9CA51A00A0557B /* Main.storyboard in Resources */,
 			);
@@ -472,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FE246C1EA6112B009846C6 /* RecommendTableViewCell.m in Sources */,
 				8286A1B11E9CA51A00A0557B /* main.m in Sources */,
 				8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */,
 				82FE24651EA5F6D3009846C6 /* RecommendTagsViewController.m in Sources */,
