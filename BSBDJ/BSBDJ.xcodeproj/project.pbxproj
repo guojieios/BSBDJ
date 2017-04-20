@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821C871A1EA7536100EB546E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 821C87181EA7536100EB546E /* LoginViewController.m */; };
+		821C871B1EA7536100EB546E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C87191EA7536100EB546E /* LoginViewController.xib */; };
 		823A314C1E9F7FAF0014AADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31251E9F7FAF0014AADF /* AppDelegate.m */; };
 		823A314D1E9F7FAF0014AADF /* EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31291E9F7FAF0014AADF /* EssenceViewController.m */; };
 		823A314E1E9F7FAF0014AADF /* FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31301E9F7FAF0014AADF /* FriendTrendsViewController.m */; };
@@ -33,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		1B0B37BAB1C1FFD98EA2FDF9 /* Pods_BSBDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSBDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		821C87171EA7536100EB546E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		821C87181EA7536100EB546E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		821C87191EA7536100EB546E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		823A31241E9F7FAF0014AADF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		823A31251E9F7FAF0014AADF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		823A31281E9F7FAF0014AADF /* EssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceViewController.h; sourceTree = "<group>"; };
@@ -178,6 +183,9 @@
 				82C1BDC41EA4883400BFD79B /* FriendTrendsViewController.xib */,
 				82C1BDC61EA4986F00BFD79B /* RecommendViewController.h */,
 				82C1BDC71EA4986F00BFD79B /* RecommendViewController.m */,
+				821C87171EA7536100EB546E /* LoginViewController.h */,
+				821C87181EA7536100EB546E /* LoginViewController.m */,
+				821C87191EA7536100EB546E /* LoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,6 +428,7 @@
 			files = (
 				8286A1C21E9CA51B00A0557B /* LaunchScreen.storyboard in Resources */,
 				8286A1BF1E9CA51B00A0557B /* Assets.xcassets in Resources */,
+				821C871B1EA7536100EB546E /* LoginViewController.xib in Resources */,
 				82FE246D1EA6112B009846C6 /* RecommendTableViewCell.xib in Resources */,
 				82C1BDC51EA4883400BFD79B /* FriendTrendsViewController.xib in Resources */,
 				8286A1BA1E9CA51A00A0557B /* Main.storyboard in Resources */,
@@ -488,6 +497,7 @@
 				823A31541E9F7FAF0014AADF /* UIView+HQExtension.m in Sources */,
 				82FE24681EA5F9AE009846C6 /* RecommendTag.m in Sources */,
 				823A314C1E9F7FAF0014AADF /* AppDelegate.m in Sources */,
+				821C871A1EA7536100EB546E /* LoginViewController.m in Sources */,
 				823A31531E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m in Sources */,
 				823A314E1E9F7FAF0014AADF /* FriendTrendsViewController.m in Sources */,
 				823A31501E9F7FAF0014AADF /* MainViewController.m in Sources */,

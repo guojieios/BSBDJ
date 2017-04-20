@@ -8,6 +8,7 @@
 
 #import "FriendTrendsViewController.h"
 #import "RecommendViewController.h"
+#import "LoginViewController.h"
 
 @interface FriendTrendsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -34,7 +35,21 @@
     
     
 }
-
+/**
+ *  登录按钮点击事件
+ *
+ *
+ */
+- (IBAction)LoginButtonClick:(id)sender {
+    
+    
+    // 实例化 控制器对象
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    
+    [self presentViewController:loginVC animated:YES completion:nil];
+    
+    
+}
 
 
 -(void)friendButtonClick {
