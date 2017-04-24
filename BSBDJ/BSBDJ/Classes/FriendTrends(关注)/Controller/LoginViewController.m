@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *LoginButton;
 
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneTextFiled;
 
 @end
 
@@ -31,7 +32,25 @@
 //    self.LoginButton.layer.cornerRadius = 5;
 //    self.LoginButton.layer.masksToBounds = YES;
     
+    // 富文本技术
+    // 1/
+//    NSMutableAttributedString *placeHolder = [[NSMutableAttributedString alloc] initWithString:@"手机号"];
+//    
+//    
+//    [placeHolder setAttributes:@{
+//                                 NSForegroundColorAttributeName : [UIColor whiteColor]
+//                                 } range:NSMakeRange(0, 3)];
+//    
+//    
+//    self.phoneTextFiled.attributedPlaceholder = placeHolder;
     
+    
+    // 2/
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"手机号" attributes:dict];
+    self.phoneTextFiled.attributedPlaceholder = placeholder;
+    self.phoneTextFiled.tintColor = [UIColor whiteColor];
     
     
 }
