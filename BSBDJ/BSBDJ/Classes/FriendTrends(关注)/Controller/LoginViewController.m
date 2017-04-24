@@ -11,6 +11,10 @@
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 
+@property (weak, nonatomic) IBOutlet UIButton *LoginButton;
+
+
+
 @end
 
 @implementation LoginViewController
@@ -21,6 +25,13 @@
     
     
     [self.view insertSubview:self.bgImage atIndex:0];
+    
+    
+    // 增加 圆角
+//    self.LoginButton.layer.cornerRadius = 5;
+//    self.LoginButton.layer.masksToBounds = YES;
+    
+    
     
     
 }
