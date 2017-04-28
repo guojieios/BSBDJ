@@ -19,6 +19,7 @@
 		823A31531E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31491E9F7FAF0014AADF /* UIBarButtonItem+HQExtension.m */; };
 		823A31541E9F7FAF0014AADF /* UIView+HQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A314B1E9F7FAF0014AADF /* UIView+HQExtension.m */; };
 		823A315A1EA05B3A0014AADF /* HQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31591EA05B3A0014AADF /* HQNavigationController.m */; };
+		8279517E1EB309D200487314 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8279517D1EB309D200487314 /* HQTextField.m */; };
 		8286A1B11E9CA51A00A0557B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1B01E9CA51A00A0557B /* main.m */; };
 		8286A1BA1E9CA51A00A0557B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8286A1B81E9CA51A00A0557B /* Main.storyboard */; };
 		8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8286A1BB1E9CA51A00A0557B /* BSBDJ.xcdatamodeld */; };
@@ -58,6 +59,8 @@
 		823A314B1E9F7FAF0014AADF /* UIView+HQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HQExtension.m"; sourceTree = "<group>"; };
 		823A31581EA05B3A0014AADF /* HQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavigationController.h; sourceTree = "<group>"; };
 		823A31591EA05B3A0014AADF /* HQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavigationController.m; sourceTree = "<group>"; };
+		8279517C1EB309D200487314 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
+		8279517D1EB309D200487314 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8286A1AC1E9CA51A00A0557B /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8286A1B01E9CA51A00A0557B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8286A1B91E9CA51A00A0557B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 		823A31331E9F7FAF0014AADF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8279517C1EB309D200487314 /* HQTextField.h */,
+				8279517D1EB309D200487314 /* HQTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 				8286A1B11E9CA51A00A0557B /* main.m in Sources */,
 				8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */,
 				82FE24651EA5F6D3009846C6 /* RecommendTagsViewController.m in Sources */,
+				8279517E1EB309D200487314 /* HQTextField.m in Sources */,
 				823A31541E9F7FAF0014AADF /* UIView+HQExtension.m in Sources */,
 				82FE24681EA5F9AE009846C6 /* RecommendTag.m in Sources */,
 				823A314C1E9F7FAF0014AADF /* AppDelegate.m in Sources */,

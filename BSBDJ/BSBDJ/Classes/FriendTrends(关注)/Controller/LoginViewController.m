@@ -46,11 +46,18 @@
     
     
     // 2/
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"手机号" attributes:dict];
-    self.phoneTextFiled.attributedPlaceholder = placeholder;
-    self.phoneTextFiled.tintColor = [UIColor whiteColor];
+//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
+//    NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:@"手机号" attributes:dict];
+//    self.phoneTextFiled.attributedPlaceholder = placeholder;
+//    self.phoneTextFiled.tintColor = [UIColor whiteColor];
+    
+    
+    
+    
+    
+    
+    
     
     
 }
