@@ -16,6 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextFiled;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *LoginMarginLeftconstraint;
+
 @end
 
 @implementation LoginViewController
@@ -56,6 +58,39 @@
     
     
     
+    
+    
+    
+    
+}
+- (IBAction)LoginButtonClick:(UIButton *)button {
+    
+    // 退出键盘
+    [self.view endEditing:YES];
+    
+    
+    
+    // 判断
+    if (self.LoginMarginLeftconstraint.constant == 0) { // 登录界面
+        
+        self.LoginMarginLeftconstraint.constant = -self.view.width;
+        
+        button.selected = YES;
+        
+    } else {  // 注册界面
+        
+        self.LoginMarginLeftconstraint.constant = 0;
+        
+        button.selected = NO;
+        
+    }
+    
+    
+    
+    // 动画
+    [UIView animateWithDuration:0.25 animations:^{
+        [self.view layoutIfNeeded];
+    }];
     
     
     

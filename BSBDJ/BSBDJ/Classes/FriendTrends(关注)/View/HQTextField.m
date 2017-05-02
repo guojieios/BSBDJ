@@ -56,6 +56,12 @@
 
 -(void)awakeFromNib {
     
+    // 设置光标的颜色
+    self.tintColor = [UIColor whiteColor];
+    // 设置文字颜色
+    self.textColor = self.tintColor;
+    
+    
     // kvc - 访问成员变量的
     [self setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
     
