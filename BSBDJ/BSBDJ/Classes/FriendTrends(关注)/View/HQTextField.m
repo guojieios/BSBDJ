@@ -7,6 +7,7 @@
 //
 
 #import "HQTextField.h"
+#import <objc/runtime.h>
 
 @implementation HQTextField
 
@@ -21,7 +22,44 @@
 
 
 
-// runtime  -- > 
+// runtime  -- >  运行时 -> 苹果官方的一套 C语言库
+// 可以接触到底层东西
+
+
++(void)initialize {
+    
+    unsigned int count = 0;
+    
+    // 复制出成员变量
+    Ivar *ivars = class_copyIvarList([UITextField class], &count);
+    
+    
+    for (int i = 0; i < count; i++) {
+        //取出成员变量
+        Ivar ivar = *(ivars + i);
+        
+        
+        
+        // 打印信息
+        HQLog(@"%s",ivar_getName(ivar));
+        
+        
+        
+        
+    }
+    
+
+    
+    
+}
+
+
+-(void)awakeFromNib {
+    
+    // kvc - 访问成员变量的
+    [self setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    
+}
 
 
 

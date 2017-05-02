@@ -14,6 +14,8 @@
 {
 
     // 私有的
+//    int _age;
+//    float _number;
 
 }
 @end
