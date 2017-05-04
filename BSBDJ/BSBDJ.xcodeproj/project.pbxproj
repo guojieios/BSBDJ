@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8211038C1EBAFF23008A8D4A /* HQVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8211038B1EBAFF23008A8D4A /* HQVerticalButton.m */; };
 		821C871A1EA7536100EB546E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 821C87181EA7536100EB546E /* LoginViewController.m */; };
 		821C871B1EA7536100EB546E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821C87191EA7536100EB546E /* LoginViewController.xib */; };
 		823A314C1E9F7FAF0014AADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A31251E9F7FAF0014AADF /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		1B0B37BAB1C1FFD98EA2FDF9 /* Pods_BSBDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSBDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8211038A1EBAFF23008A8D4A /* HQVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQVerticalButton.h; sourceTree = "<group>"; };
+		8211038B1EBAFF23008A8D4A /* HQVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQVerticalButton.m; sourceTree = "<group>"; };
 		821C87171EA7536100EB546E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		821C87181EA7536100EB546E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		821C87191EA7536100EB546E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 			children = (
 				8279517C1EB309D200487314 /* HQTextField.h */,
 				8279517D1EB309D200487314 /* HQTextField.m */,
+				8211038A1EBAFF23008A8D4A /* HQVerticalButton.h */,
+				8211038B1EBAFF23008A8D4A /* HQVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82FE246C1EA6112B009846C6 /* RecommendTableViewCell.m in Sources */,
+				8211038C1EBAFF23008A8D4A /* HQVerticalButton.m in Sources */,
 				8286A1B11E9CA51A00A0557B /* main.m in Sources */,
 				8286A1BD1E9CA51A00A0557B /* BSBDJ.xcdatamodeld in Sources */,
 				82FE24651EA5F6D3009846C6 /* RecommendTagsViewController.m in Sources */,
