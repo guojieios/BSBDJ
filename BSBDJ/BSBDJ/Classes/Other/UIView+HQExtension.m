@@ -10,6 +10,24 @@
 
 @implementation UIView (HQExtension)
 
+
+-(void)setCenterX:(CGFloat)centerX {
+    
+    CGPoint center = self.center;
+    center.x = centerX;
+    self.center = center;
+    
+}
+
+-(void)setCenterY:(CGFloat)centerY {
+    
+    CGPoint center = self.center;
+    center.y = centerY;
+    self.center = center;
+    
+}
+
+
 -(void)setSize:(CGSize)size {
     
     CGRect frame = self.frame;
@@ -98,8 +116,14 @@
 }
 
 
+-(CGFloat)centerY {
+    return self.center.y;
+}
 
 
+-(CGFloat)centerX {
+    return self.center.x;
+}
 
 
 
