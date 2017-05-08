@@ -15,6 +15,9 @@
 // 顶部标签提示
 @property (nonatomic, weak) UIView *redView;
 
+@property (weak ,nonatomic) UIButton *selectButton;
+
+
 @end
 
 @implementation EssenceViewController
@@ -54,6 +57,22 @@
     [self.view addSubview:titleView];
     
     
+    
+    // 底部红色线
+    UIView *redView = [[UIView alloc] init];
+    redView.backgroundColor = [UIColor redColor];
+    
+    
+    redView.height = 2;
+    
+    redView.y = titleView.height - redView.height;
+    
+    [titleView addSubview:redView];
+    
+    self.redView = redView;
+
+    
+    
     // 设置内部子标签
     NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子"];
     CGFloat titleHeight = titleView.height;
@@ -70,6 +89,8 @@
         // 设置文字
         [button setTitle:titles[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14.0];
         
         // 点击事件
@@ -78,28 +99,46 @@
         
         [titleView addSubview:button];
         
-        
+        // 设置初始化状态
+        if (i == 0) {
+            
+            // 设置状态
+            button.enabled = NO;
+            
+            
+            self.selectButton = button;
+            
+            
+            [button.titleLabel sizeToFit];
+            
+            // 设置 红线的位置
+            self.redView.width = button.titleLabel.width;
+            self.redView.centerX = button.centerX;
+            
+                    }
+
         
     }
     
     
-    // 底部红色线
-    UIView *redView = [[UIView alloc] init];
-    redView.backgroundColor = [UIColor redColor];
-
     
-    redView.height = 2;
     
-    redView.y = titleView.height - redView.height;
     
-    [titleView addSubview:redView];
-    
-    self.redView = redView;
 }
 
 
 
 -(void)titleButtonClick:(UIButton *)button {
+    
+    
+    self.selectButton.enabled = YES;
+    // 设置状态
+    button.enabled = NO;
+    
+    
+    self.selectButton = button;
+    
+    
     
   [UIView animateWithDuration:0.25 animations:^{
       // 设置 红线的位置
